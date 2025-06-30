@@ -1,5 +1,6 @@
 package com.mimic.tutorial;
 
+import com.mimic.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +12,6 @@ public class KaupenJoeTutorial implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
