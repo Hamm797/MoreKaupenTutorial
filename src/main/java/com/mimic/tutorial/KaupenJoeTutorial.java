@@ -1,5 +1,7 @@
 package com.mimic.tutorial;
 
+import com.mimic.tutorial.block.ModBlocks;
+import com.mimic.tutorial.item.ModItemGroups;
 import com.mimic.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +14,9 @@ public class KaupenJoeTutorial implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
